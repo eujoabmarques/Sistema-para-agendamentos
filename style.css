@@ -1,0 +1,222 @@
+/* Estilos globais */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Estilos para formulários */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #00c853; /* Verde principal */
+    outline: none;
+}
+
+.form-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+    background-size: 16px;
+}
+
+.form-group input[type="date"] {
+    padding-right: 45px;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00c853; /* Verde principal */
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #008c3a; /* Verde escuro */
+}
+
+.btn-secundario {
+    background-color: #ff9800; /* Laranja secundário */
+}
+
+.btn-secundario:hover {
+    background-color: #e68a00; /* Laranja escuro */
+}
+
+.btn-sair {
+    background-color: #d32f2f; /* Cor para "Sair" */
+}
+
+.btn-sair:hover {
+    background-color: #b71c1c; /* Cor mais escura para "Sair" */
+}
+
+/* Estilos para links */
+a {
+    display: block;
+    margin-top: 10px;
+    color: #00c853; /* Verde principal */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: 500;
+}
+
+td {
+    color: #333;
+}
+
+/* Estilos específicos para o painel administrativo */
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filters input, .filters select {
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+    transition: border 0.3s ease;
+}
+
+.filters button {
+    padding: 12px 20px;
+    background-color: #00c853;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+    background-color: #008c3a;
+}
+
+/* Estilo para as ações de botões */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-buttons a {
+    padding: 12px 20px;
+    background-color: #00c853;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons a:hover {
+    background-color: #008c3a;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .filters input, .filters select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+
+    .admin-container {
+        width: 100%;
+    }
+}
